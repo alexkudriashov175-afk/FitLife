@@ -1,8 +1,9 @@
-WATER_ML_PER_KG = 30 
-ML_PER_LITER = 1000 
+WATER_ML_PER_KG = 30
+ML_PER_LITER = 1000
 
 user_name = input('Привет, как тебя зовут? ')
 print(f'Приятно познакомиться, {user_name}!')
+
 user_age = int(input('Сколько тебе лет? '))
 user_weight = float(input('Введите ваш вес (в кг): ').replace(',', '.'))
 # При вводе через запятую была ошибка.
