@@ -1,3 +1,6 @@
+WATER_ML_PER_KG = 30 
+ML_PER_LITER = 1000 
+
 user_name = input('Привет, как тебя зовут? ')
 print(f'Приятно познакомиться, {user_name}!')
 user_age = int(input('Сколько тебе лет? '))
@@ -7,8 +10,8 @@ user_weight = float(input('Введите ваш вес (в кг): ').replace(',
 user_height = float(input('Введите ваш рост (в метрах): ').replace(',', '.'))
 
 bmi = user_weight / (user_height ** 2)
-water_ml = user_weight * 30
-water_l = water_ml / 1000
+water_ml = user_weight * WATER_ML_PER_KG
+water_l = water_ml / ML_PER_LITER
 
 print()
 print(f'Отчет для пользователя: {user_name} ({user_age} л.)')
